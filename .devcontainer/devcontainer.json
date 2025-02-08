@@ -2,7 +2,10 @@
   "name": "Kubernetes with Kind",
   "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",  // or another base image
   "features": {
-    "docker-in-docker": "latest"  // Enable Docker-in-Docker (DinD) feature
+    "docker-in-docker": "latest",  // Enable Docker-in-Docker (DinD) feature
+    "ghcr.io/devcontainers/features/go:1": {  // Add Go feature
+      "version": "latest"
+    }
   },
   "postCreateCommand": [
     "curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.18.0/kind-linux-amd64",  // Download Kind
