@@ -11,6 +11,8 @@
     "curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.18.0/kind-linux-amd64",  // Download Kind
     "chmod +x ./kind",  // Make it executable
     "sudo mv ./kind /usr/local/bin/kind",  // Move Kind to the bin directory
+    "echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc",  // Ensure /usr/local/bin is in PATH
+    "source ~/.bashrc",  // Reload bash configuration
     "docker info"  // Ensure Docker is running
   ]
 }
