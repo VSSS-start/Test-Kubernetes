@@ -19,7 +19,7 @@ apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
 - role: control-plane
   extraPortMappings:
-  - containerPort: 80
-    hostPort: 80
+  - containerPort: 80    #30001 change to
+    hostPort: 80         #30001 change to
 - role: worker
 - role: worker
